@@ -14,7 +14,8 @@ get '/new' do
 end
 
 get '/cat' do
-  erb(:index)
+  @name = ["Amigo", "Misty", "Almond"].sample
+  erb :index
 end
 
 get '/visitor' do
