@@ -13,8 +13,14 @@ get '/new' do
   "NEW PATH HERE"
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Amigo", "Misty", "Almond"].sample
+  erb :index
+end
+
+get '/named-cat' do
+  puts(params)
+  @name = params[:name]
   erb :index
 end
 
