@@ -22,6 +22,7 @@ get '/named-cat' do
   puts(params)
   @name = params[:name]
   erb :index
+  
 end
 
 get '/visitor' do
